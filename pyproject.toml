@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "usersskillpycharmprojectspytest-1"
+version = "0.1.0"
+description = ""
+authors = ["Fatalwgx <nothingfatalleo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "usersskillpycharmprojectspytest_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.0"
+selene = "2.0.0b14"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+# addopts = "--alluredir=allure-results --clean-alluredir"
+markers = ["mobile"]
