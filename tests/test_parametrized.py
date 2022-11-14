@@ -3,10 +3,7 @@ from selene.support.shared.jquery_style import s
 import pytest
 
 
-@pytest.mark.parametrize(["width", "height"],
-                         [(1980, 1024), (900, 600)],
-                         ids=["Desktop", "Mobile"],
-                         )
+@pytest.mark.parametrize(["width", "height"], [(1980, 1024), (900, 600)], ids=["Desktop", "Mobile"])
 def test_parametrized(width, height):
     browser.config.window_width = width
     browser.config.window_height = height
